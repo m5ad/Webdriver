@@ -19,6 +19,13 @@ Page.querySelector(".s").value := "boingo"
 Page.querySelector(".searchsubmit").click()
 return
 
+
+f2::
+Page := Chrome.NewSession()
+Page.querySelector("#activity-stream-comments-textarea").value :="Sample Text Lorem Ipsum"
+return
+
+
 f10::
 Page.Screenshot(a_desktop "\test.png")
 return
